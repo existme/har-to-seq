@@ -12,13 +12,13 @@ NOTE! This project is still under development.
 Small utility program that dumps a HAR file to standard output
 in a human readable way.
 
-Syntax: har-dump <filename-of-har-file>
+Syntax: har-dump {filename-of-har-file}
 
 ## har-uml
 Small utility program that generates PlantUML code from the HAR file.
 
-Syntax: har-dump <filename-of-har-file>
+Syntax: har-uml {filename-of-har-file}
 
 It can also be used together with the get-png script to generate a PNG file:
 
-Syntax get-png.sh <filename-of-har-file>
+Syntax get-png.sh {filename-of-har-file}
