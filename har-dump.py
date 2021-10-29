@@ -1,19 +1,16 @@
 #!/usr/bin/python
 
 import sys
-import json
+
+import utils
 
 if len(sys.argv) < 2:
     print('Syntax: ', sys.argv[0], ' filename')
     exit()
 
-filename = sys.argv[1]
+data = utils.read_json_file(sys.argv[1])
 
-f = open(filename, 'r')
-data = json.load(f)
-f.close()
-
-print('##### Dunp of file {}'.format(filename))
+print('##### Dunp of file {}'.format(sys.argv[1]))
 print('Pages')
 for page in data['log']['pages']:
     print('  {}'.format(page['title']))
