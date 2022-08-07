@@ -25,9 +25,9 @@ for entry in data['log']['entries']:
 # print(participants)
 
 print('@startuml')
-print 'actor "Me" as ME'.format(participant, participants[participant])
+print('actor "Me" as ME'.format(participant, participants[participant]))
 for participant in participants:
-    print 'participant "{}" as {}'.format(participant, participants[participant])
+    print('participant "{}" as {}'.format(participant, participants[participant]))
 
 # user -> ua: POST "/v1.0/users/hid" {[hid1,hid2]} \nheader {api-key}
 for entry in data['log']['entries']:
