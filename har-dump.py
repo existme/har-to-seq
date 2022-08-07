@@ -12,8 +12,9 @@ data = utils.read_json_file(sys.argv[1])
 
 print('##### Dunp of file {}'.format(sys.argv[1]))
 print('Pages')
-for page in data['log']['pages']:
-    print('  {}'.format(page['title']))
+if 'pages' in data['log']:
+    for page in data['log']['pages']:
+        print('  {}'.format(page['title']))
 
 print('Entries')
 for entry in data['log']['entries']:
