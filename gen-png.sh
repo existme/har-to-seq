@@ -7,6 +7,6 @@ if [ -z "$file" ]; then
   exit 1
 fi
 
-python har-uml.py $file | java -jar bin/plantuml.jar -pipe > $file.png
+python har-uml.py "$file" | java -jar bin/plantuml.jar -pipe > "$file.png"
 echo "Created $file.png"
-open $file.png
+open "$file.png"
